@@ -3,3 +3,6 @@ target_link_libraries(2.a.out pthread)
 
 add_executable(2.b.out SelfDeadLock.cc)
 target_link_libraries(2.b.out pthread)
+
+add_executable(2.c.out MutualDeadLock.cc)
+target_link_libraries(2.c.out base)
