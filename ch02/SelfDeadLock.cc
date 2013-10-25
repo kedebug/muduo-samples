@@ -7,18 +7,18 @@ public:
   void process() __attribute__ ((noinline))
   {
     printf("Request::process\n");
-    testbase::MutexLockGuard lock(mutex_);
+    base::MutexLockGuard lock(mutex_);
     print();
   }
   
   void print() const __attribute__ ((noinline))
   {
     printf("Request::print\n");
-    testbase::MutexLockGuard lock(mutex_);
+    base::MutexLockGuard lock(mutex_);
     printf("Request::print end\n");
   }
 private:
-  mutable testbase::MutexLock mutex_;
+  mutable base::MutexLock mutex_;
 };  
 
 int main()
