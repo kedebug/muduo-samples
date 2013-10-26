@@ -33,7 +33,7 @@ public:
     struct timespec abstime;
     clock_gettime(CLOCK_REALTIME, &abstime);
     abstime.tv_sec += seconds;
-    return ETIMEOUT == pthread_cond_timeout(&cond_, mutex_.getPthreadMutex(), &abstime);
+    return ETIMEDOUT == pthread_cond_timedwait(&cond_, mutex_.getPthreadMutex(), &abstime);
   }
 
   void notify()

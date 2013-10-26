@@ -37,7 +37,7 @@ public:
     assert(!deque_.empty());
     T front(deque_.front());
     deque_.pop_front();
-    return T;
+    return front;
   }
 
   size_t size() const

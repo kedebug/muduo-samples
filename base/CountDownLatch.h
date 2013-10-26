@@ -21,15 +21,15 @@ public:
   void countDown()
   {
     MutexLockGuard lock(mutex_);
-    --count;
-    if (count == 0)
+    --count_;
+    if (count_ == 0)
       cond_.notifyAll();
   }
 
   void wait()
   {
     MutexLockGuard lock(mutex_);
-    while (count > 0)
+    while (count_ > 0)
       cond_.wait();
   }
 
