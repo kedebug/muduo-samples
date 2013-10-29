@@ -1,8 +1,9 @@
 #ifndef _MUTEX_H_
 #define _MUTEX_H_
 
+#include "base/Thread.h"
+
 #include <boost/noncopyable.hpp>
-#include <base/Thread.h>
 #include <assert.h>
 #include <pthread.h>
 

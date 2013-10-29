@@ -1,8 +1,8 @@
 #ifndef _BLOCKING_QUEUE_H_
 #define _BLOCKING_QUEUE_H_
 
-#include <base/Mutex.h>
-#include <base/Condition.h>
+#include "base/Mutex.h"
+#include "base/Condition.h"
 
 #include <boost/noncopyable.hpp>
 #include <deque>

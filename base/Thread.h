@@ -1,7 +1,7 @@
 #ifndef _THREAD_H_
 #define _THREAD_H_
 
-#include <base/Atomic.h>
+#include "base/Atomic.h"
 
 #include <boost/shared_ptr.hpp>
 #include <boost/function.hpp>

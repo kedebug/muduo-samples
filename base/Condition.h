@@ -1,7 +1,7 @@
 #ifndef _CONDITION_H_
 #define _CONDITION_H_
 
-#include <base/Mutex.h>
+#include "base/Mutex.h"
 
 #include <boost/noncopyable.hpp>
 #include <errno.h>
