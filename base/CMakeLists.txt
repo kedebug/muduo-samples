@@ -1,5 +1,6 @@
 set(LIB_BASE 
     Thread.cc
+    LogStream.cc
 )
 add_library(base ${LIB_BASE})
 target_link_libraries(base pthread rt)
